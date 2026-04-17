@@ -1,0 +1,11 @@
+graph ecu{
+nodesep=1.0;
+ranksep=1.5;
+node [shape=circle style=filled fillcolor=lightblue fontsize=9 width=1];
+edge [color=red fontsize=14];
+"Battery Management System"--"Infotainment Control Unit" [label= "cost:1405.8 delay:5"];
+"Brake Control Unit"--"Infotainment Control Unit" [label= "cost:1405.8 delay:5"];
+"ADAS Processing Unit"--"Infotainment Control Unit" [label= "cost:1405.8 delay:5"];
+"Steering Control Unit"--"ADAS Processing Unit" [label= "cost:21465 delay:25"];
+"Engine Control Unit"--"Brake Control Unit" [label= "cost:36412.2 delay:10"];
+}

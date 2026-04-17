@@ -1,0 +1,12 @@
+#include<list>
+#include<iostream>
+int main()
+{
+    std::list<int> l1 = {1,2,3};
+    std::list<int> l2 = {10,20};
+    auto it = l2.begin();// points to 10
+     
+    l1.splice(l1.begin(), l2, it);
+    for (int x : l1)
+        std::cout << x <<" ";
+}
